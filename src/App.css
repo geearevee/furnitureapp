@@ -1,38 +1,191 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-components {
   display: flex;
-  flex-direction: column;
+  gap: 100px;
+}
+
+.navbar {
+  display: flex;
+  gap: 200px;
+  margin: 0px 000px 0px 500px;
+}
+.App {
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.navbody {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+.left {
+  flex: 0 0 400px;
+}
+.right {
+  flex: 1 1 auto;
+  position: relative;
+  height: 800px;
+}
+.home-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.overlay-transparent-card {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: -240px;
+  background: rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  height: 500px;
+  width: 600px;
+  padding: 20px;
+}
+.overlay-transparent-arrow {
+  position: absolute;
+}
+.navbodytext {
+  width: 50%;
+}
+.navbodyimg1 {
+  width: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.body {
+  height: 400px;
+}
+.aboutusheader {
+  margin-left: 50px;
+}
+.bodyheader {
+  padding: 20px 0px 20px 0px;
+  margin: 80px 0px;
+  background-color: rgba(194, 194, 194, 0.484);
+
+  /* height: 200px; */
+  /* background-color: pink; */
+}
+.bodyhtext {
+  /* height: 100px; */
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 2.6rem;
+  color: #276969;
+}
+.bodyhcompanies {
+  display: flex;
+  gap: 15px;
+  opacity: 0.7;
+  font-size: 2rem;
+  color: gray;
+  width: max-content;
+  margin: 0px auto;
+  display: flex;
+  gap: 60px;
+}
+.bodycontent {
+  /* height: 200px; */
+  display: flex;
+}
+.bodycontent-items {
+  flex: 1 1 25%;
+  padding: 10px;
+}
+.bodycontent-items img {
+  height: 30px;
+  width: 30px;
+  object-fit: contain;
+}
+.overlay-card-header {
+  font-size: 4rem;
+  word-break: break-all;
+  color: #276969;
+  width: 60%;
+  margin-left: 0px;
+  margin-right: auto;
+}
+.overlay-card-text {
+  font-size: 14px;
+  color: gray;
+  width: 70%;
+}
+.pattern {
+  background-image: radial-gradient(#276969 4px, transparent 4px);
+  background-size: 38px 38px;
+  background-color: rgba(71, 212, 255, 0);
+  height: 200px;
+  width: 200px;
+  margin: 10px auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .leftaboutus {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 200px;
+} */
+.rightaboutus {
+  height: 200px;
+}
+.productsheader {
+  display: flex;
+}
+.aboutus {
+  margin-top: 300px;
+}
+.aboutusbody {
+  display: flex;
+}
+.leftaboutus {
+  flex: 1 1 50%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 40px;
+}
+.leftaboutus > * {
+  padding: 10px;
+  flex: 0 0 40%;
+  /* width: 50%; */
+}
+.rightaboutus {
+  flex: 1 1 50%;
+  height: 600px;
+}
+.rightaboutus img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.productsheader {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  margin: 0px auto;
+  padding: 20px 0px;
+}
+.productscontent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 90%;
+  margin: 0px auto;
+  justify-content: center;
+}
+.product-card {
+  flex: 1 1 25%;
+}
+.product-card-content {
+  background-color: rgba(232, 229, 229, 0.613);
+  padding-bottom: 120px;
+}
+.product-card img {
+  width: 80%;
+  display: block;
+  margin-top: -110px;
+  overflow-clip-margin: -100px;
+  margin: 0 auto;
 }
